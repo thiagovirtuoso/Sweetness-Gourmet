@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    color: #A54328;
+    font-size: 1.6rem;
+    background-image: url(/assets/background.png);
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    position: absolute;
+    top: 5%;
+}
+
+.nav-container .nav-button {
+    width: max-content;
+    border: none;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-image: linear-gradient(black, black);
+    background-size: 0% 2px;
+    background-position: 50% calc(100% - 0px);
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}
+
+.nav-container .nav-button:hover {
+    cursor: pointer;
+    background-size: 100% 2px;
+    color: black;
+    filter: brightness(120%);
+}
+
+#logo {
+    width: 15%;
+    transition: all 200ms;
+}
+
+#logo:hover {
+    cursor: pointer;
+    scale: 1.2;
+    transform: rotate(-10deg);
+}
+
+
+.image-text span {
+    font-family: 'Emilys Candy', cursive;
+    font-size: 3.6rem;
+    color: goldenrod;
+}
+
+.image-text h1 {
+    font-size: 4.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.content-container {
+    position: relative;
+}
+
+.content-container #background {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    filter: brightness(80%);
+}
+
+.image-text {
+    position: absolute;
+    top: 45rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image-text button {
+    width: 12rem;
+    background: none;
+    color: white;
+    border: none;
+    border: 2px solid white;
+    border-radius: .5rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    transition: all 200ms;
+}
+
+.image-text button:hover {
+    scale: 1.1;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
